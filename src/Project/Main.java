@@ -30,3 +30,41 @@ public class Main {
         System.out.println("You Win!");
     }
 }
+
+
+
+
+
+
+
+package Project;
+
+
+        import java.util.Random;
+        import java.util.Scanner;
+
+public class Main {
+    public static void Main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        Random rand = new Random();
+        int randNum = 0;
+        int upperLimit=100;
+        int lowerLimit = 1;
+        String myAnswer = "";
+
+        do{
+            randNum = rand.nextInt (bound: upperLimit - lowerLimit+1)/2;
+            system.out.println("I think its's"=randNum);
+           myAnswer = in.nextLine();
+
+           if (myAnswer.equals("too low")){
+               lowerLimit= randNum +1;
+           } else if (myAnswer.equals("too high")){
+           upperLimit = randNum - 1;}
+} while (!myAnswer.equals("yes"));
+in.close(
+;
+System.out.println("You guessed my number!")
+}
+}
+}
